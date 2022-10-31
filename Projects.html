@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Remus@localhost</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Remus-at-localhost</strong> <span> | Portfolio</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+							<li><a href="Skills.html">My Skillset</a></li>
+							<li><a href="Experience.html">Work Experience</a></li>
+							<li><a href="Certifications.html">Certifications</a></li>
+							<li><a href="Projects.html">Personal projects</a></li>
+						
+						
+					</ul>
+					<ul class="actions stacked">
+						<li><a href="#" class="button primary fit">Back</a></li>
+						
+					</ul>
+				</nav>
+				<!-- Main -->
+				
+				<section id="banner" class="major">
+					<div class="inner">
+						<header class="major">
+
+				<h2>  1. Free Surveillance System using a spare Android phone & laptop </h2></header>
+				<p><span class="image left"><img src="images/mattrix.png" alt="" />
+				
+				<h4>This is my first open source project, which is also uploaded to github and made available for the public
+					 to use / modify under the norms of MIT licence. You can download the code for this project from 
+					 <a href="https://github.com/Remus-at-localhost/Free_Surveillance_Debian">
+						 <u>Here</u></a> & watch the demo of this system <a href="https://youtu.be/1G6cGH2-AvY?t=76">
+							<u>Here</u></a>
+					 . 
+				</h4>
+				<p><b>The Requirements -></b>
+					You just need a spare android phone, a laptop with any debian distro that can run Metasploit. You'll also need to have Python3 and 
+						libraries like pyautogui & requests installed in your system. Moreover
+					for interacting with this system I've used a discord server where you can 
+					input certain commands to remotely monitor your surveillance feed.
+					<br />
+					<b>How to set this up -></b>  1. Create a Discord Server and one text group within it, which will be dedicated thereafter for uploading the surveillance images and controlling the system through user-defined commands. 
+
+					<br />2. Now make sure that you extract the [Access token] and [Group ID] of your Discord Server's text group. 
+					Need Help extracting these 2, watch this -> <a href="https://www.youtube.com/watch?v=Qy6RiosHKo0&t=15s">
+						<b><u>Finding Access token and Group Id on Discord</u></b></a>
+					
+					<br />3. Once you have these 2 things, copy them to the [Token URL ID] file. 
+					
+					<br />4. Edit the changes in the Exploit (Bash script) file [edit Listening Port and Listening Host]. Now run the Start script once all changes are made.		
+			</p>
+			</div>
+			</section>
+			
+			<div class="box">
+			<p><span class="image left"><img src="images/discord.gif" alt="" /></span><h4>As you can see the phone (surveillance camera) is placed strategically behind the front
+			door of my house and it's connected to my home network (wifi), whereas my laptop is also connected to the same network.</h4></p>
+				<p><span class="image right"><img src="images/door.jpg" alt="" /></span><h4><u>The Working-></u> As soon as I run the Start.py script on the laptop 
+					this script initiates the process and runs two more scripts parralelly [exploit.sh & Main.py]. then the laptop attempts to
+				gain the Reverse TCP shell access of that phone using metasploit and once that is done the system informs the user to send the
+			START command to begin the 2nd phase of automation. Once the system is ready to send images of the live feed it prompts the 
+		user to send SHOW | CONT | SHUTDOWN commands. The Exploit.sh is a 
+		bash script which automates some metasploit commands and the Main.py is a script which interactes with the user by 
+	sending system messages related to the system and recieving commands given by the user(s) through the discord server.	
+		
+	</h4></p>
+
+	<p><span class="image right"><img src="images/PC.jpeg" alt="" /></span><h4><u>How I use this? -> </u>Whenever I have to go out, 
+		I just place my spare android phone behind the front door, then I make sure that this phone & my laptop are connected 
+	to the same network(home wifi).Then I just start the {Start.py} script on the laptop and then I can go out and control 
+	this system on the go through discord app on my mobile. </h4>
+
+	<p><h3><u>The Udemy Course</u></h3>
+	<h4>
+		I have also made a Video course which is uploaded on udemy, where I've covered all the prerequisites you need to learn
+		to build this project from scratch. You can preview my course <a href="https://youtu.be/1G6cGH2-AvY?t=76">
+			<u>Here</u></a>
+	</h4>
+	</p>
+
+</div>
+
+	<section id="banner" class="major">
+		<div class="inner">
+			<header class="major">
+
+	<h2>  2. Free Surveillance System (Windows users)</h2></header>
+
+	<header class="major">
+
+		<h2>  3. Student's Academic statistics generator Dashboard </h2></header>
+
+
+<header class="major">
+
+	<h2>  4. Remotely Monitoring LAN statistics </h2></header>
+</section>
+
+
+
+<footer id="footer">
+	<div class="inner">
+		<ul class="icons">
+			<li><a href="#" class="icon brands alt fa-udemy"><span class="label">Udemy</span></a></li>
+			<li><a href="https://www.youtube.com/channel/UCa26qZfTf3xru987elPwPpw/videos" class="icon brands alt fa-youtube"><span class="label">Youtube</span></a></li>
+			<li><a href="https://github.com/Remus-at-localhost" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+			<li><a href="https://www.linkedin.com/in/saumitra-kulkarni-881541186/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+		</ul>
+	</div>
+</footer>
+			
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
